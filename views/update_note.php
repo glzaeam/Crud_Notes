@@ -31,6 +31,7 @@ try {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Update Note</title>
+  <link rel="icon" href="../note.png" type="image/x-icon">
   <link href="../statics/css/bootstrap.min.css" rel="stylesheet">
   <script src="../statics/js/bootstrap.js"></script>
   <style>

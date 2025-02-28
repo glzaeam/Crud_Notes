@@ -1,5 +1,12 @@
 <?php
+session_start(); // Start the session
 include 'database/database.php';
+
+// Check if the user is logged in
+if (!isset($_SESSION['user'])) {
+    header('Location: views/login.php'); // Redirect to login page
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +69,7 @@ include 'database/database.php';
         <div class="container">
             <a class="navbar-brand text-white" href="index.php">📒Notes Manager</a>
             <a href="views/add_note.php" class="btn btn-add">+ Add Note</a>
+            <a href="handlers/logout_handler.php" class="btn btn-danger">Logout</a>
         </div>
     </nav>
 
